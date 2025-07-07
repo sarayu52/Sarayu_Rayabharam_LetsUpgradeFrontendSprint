@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 2rem;
+  background-color: #eef6fb;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* General Section Styling */
+.section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skills li {
+  background-color: #d6ecff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  list-style: none;
+}
+
+/* Project Card */
+.project-card {
+  background: #f0f8ff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
